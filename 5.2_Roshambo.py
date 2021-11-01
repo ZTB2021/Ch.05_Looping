@@ -13,8 +13,8 @@ win = 0
 lose = 0
 tied = 0
 games = 0
-quit = False
-while not quit == True:
+Done = False
+while not Done:
     number = random.randint(1, 3)
     roshambo = int(input("put 1 for rock, 2 for paper, 3 for scissors or 4 for quit"))
     if number == 1:
@@ -52,7 +52,7 @@ while not quit == True:
         print("you lose")
         print("the computer chose scissors")
     elif roshambo == 4:
-        quit = True
+        Done = True
     else:
         print("That is not a number you can choose try again")
 
